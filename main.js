@@ -5,8 +5,9 @@ import "./src/components/styles/generic/reset.css";
 
 
 import CardGame from "./src/components/CardGame";
+import BoardGame from "./src/components/objects/BoardGame";
 
 const $root = document.querySelector("#root");
-const $htmlCardGame = CardGame();
+const $htmlBoardGame = BoardGame(2);
 
-$root.insertAdjacentHTML('beforeend', $htmlCardGame);
+$root.insertAdjacentHTML('beforeend', $htmlBoardGame);
