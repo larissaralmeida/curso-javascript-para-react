@@ -4,17 +4,15 @@ import "./src/components/styles/generic/reset.css";
 
 
 
-import CardGame from "./src/components/CardGame";
-import BoardGame from "./src/components/objects/BoardGame";
-import PlayerName from "./src/components/PlayerName";
 import ScoreBoard from "./src/components/objects/ScoreBoard";
+import BoardGame from "./src/components/objects/BoardGame";
 
 const $root = document.querySelector("#root");
 
 $root.insertAdjacentHTML('beforeend', 
     `
         ${ScoreBoard()}
-        ${BoardGame(6)}
+        ${BoardGame(2)}
 
     `
 
